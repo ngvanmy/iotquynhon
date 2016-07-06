@@ -35,5 +35,9 @@
   "appuser": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "device": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

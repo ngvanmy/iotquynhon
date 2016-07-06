@@ -1,0 +1,40 @@
+{
+  "name": "device",
+  "plural": "device",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "guid": {
+      "type": "string",
+      "required": true
+    },
+    "devicename": {
+      "type": "string",
+      "required": true
+    },
+    "devicetype": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "appuser",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

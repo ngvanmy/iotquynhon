@@ -19,6 +19,7 @@
       "type": "string",
       "required": true
     }
+   
   },
   "validations": [],
   "relations": {
